@@ -1,7 +1,6 @@
 # ExpandableTableViewDataHelper
 
 ExpandableTableViewDataHelper is an utility API to help easily making an expandable tableview. Providing only three required parameters, one can have a static expandable tableview (by static, the tableview is not editable). Those three parameters include:
-
   1. the maximum number of level the tableview can expand.
   2. the data source array in each section
   3. the level array list in each section
@@ -9,6 +8,10 @@ ExpandableTableViewDataHelper is an utility API to help easily making an expanda
 All those datas are passed through the delegation methods (sort of like the UITableviewDelegate protocol).
 
 This API does not include any UI components as I thought which can provide more flexibility. With a tableview to init it with, one can customize the UI in a freedom way. 
+
+## An Example Preview
+![example 1 preview](https://github.com/mpan753/ExpandableTableViewDataHelper/blob/master/ExpanbleTableViewExample1.gif)
+
 ## Getting Started
 
 You can do either *pod* or *manual installation* as you like. 
