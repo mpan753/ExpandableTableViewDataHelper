@@ -1,0 +1,324 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D657DE41D3882BB004AB60C /* ExpandableTableViewDataHelper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0D657DE31D3882BB004AB60C /* ExpandableTableViewDataHelper.h */; };
+		0D657DE61D3882BB004AB60C /* ExpandableTableViewDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D657DE51D3882BB004AB60C /* ExpandableTableViewDataHelper.m */; };
+		0D657DEE1D3883CF004AB60C /* ExpandableCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D657DEC1D3883CF004AB60C /* ExpandableCellModel.m */; };
+		2C97FF6C283541ED4CEC0AEB /* Pods_ExpandableTableViewDataHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CE3F314EC276C2C2BAF0836 /* Pods_ExpandableTableViewDataHelper.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0D657DDE1D3882BB004AB60C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				0D657DE41D3882BB004AB60C /* ExpandableTableViewDataHelper.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0D657DE01D3882BB004AB60C /* libExpandableTableViewDataHelper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libExpandableTableViewDataHelper.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D657DE31D3882BB004AB60C /* ExpandableTableViewDataHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExpandableTableViewDataHelper.h; sourceTree = "<group>"; };
+		0D657DE51D3882BB004AB60C /* ExpandableTableViewDataHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExpandableTableViewDataHelper.m; sourceTree = "<group>"; };
+		0D657DEC1D3883CF004AB60C /* ExpandableCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpandableCellModel.m; sourceTree = "<group>"; };
+		0D657DED1D3883CF004AB60C /* ExpandableCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpandableCellModel.h; sourceTree = "<group>"; };
+		53B0DBD5D8F016D5CA7C0F3A /* Pods-ExpandableTableViewDataHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpandableTableViewDataHelper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExpandableTableViewDataHelper/Pods-ExpandableTableViewDataHelper.debug.xcconfig"; sourceTree = "<group>"; };
+		8CE3F314EC276C2C2BAF0836 /* Pods_ExpandableTableViewDataHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExpandableTableViewDataHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B39801080D95E78007F62FE1 /* Pods-ExpandableTableViewDataHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpandableTableViewDataHelper.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExpandableTableViewDataHelper/Pods-ExpandableTableViewDataHelper.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D657DDD1D3882BB004AB60C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C97FF6C283541ED4CEC0AEB /* Pods_ExpandableTableViewDataHelper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D657DD71D3882BB004AB60C = {
+			isa = PBXGroup;
+			children = (
+				0D657DE21D3882BB004AB60C /* ExpandableTableViewDataHelper */,
+				0D657DE11D3882BB004AB60C /* Products */,
+				CFA3865283B65B570860D4AB /* Pods */,
+				70B099366BDD70B87C687EB6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0D657DE11D3882BB004AB60C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D657DE01D3882BB004AB60C /* libExpandableTableViewDataHelper.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0D657DE21D3882BB004AB60C /* ExpandableTableViewDataHelper */ = {
+			isa = PBXGroup;
+			children = (
+				0D657DE31D3882BB004AB60C /* ExpandableTableViewDataHelper.h */,
+				0D657DE51D3882BB004AB60C /* ExpandableTableViewDataHelper.m */,
+				0D657DEC1D3883CF004AB60C /* ExpandableCellModel.m */,
+				0D657DED1D3883CF004AB60C /* ExpandableCellModel.h */,
+			);
+			path = ExpandableTableViewDataHelper;
+			sourceTree = "<group>";
+		};
+		70B099366BDD70B87C687EB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8CE3F314EC276C2C2BAF0836 /* Pods_ExpandableTableViewDataHelper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CFA3865283B65B570860D4AB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				53B0DBD5D8F016D5CA7C0F3A /* Pods-ExpandableTableViewDataHelper.debug.xcconfig */,
+				B39801080D95E78007F62FE1 /* Pods-ExpandableTableViewDataHelper.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0D657DDF1D3882BB004AB60C /* ExpandableTableViewDataHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D657DE91D3882BB004AB60C /* Build configuration list for PBXNativeTarget "ExpandableTableViewDataHelper" */;
+			buildPhases = (
+				2BC75F69B086BCF55579438C /* 📦 Check Pods Manifest.lock */,
+				0D657DDC1D3882BB004AB60C /* Sources */,
+				0D657DDD1D3882BB004AB60C /* Frameworks */,
+				0D657DDE1D3882BB004AB60C /* CopyFiles */,
+				F254BB6CFD12451089450A47 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExpandableTableViewDataHelper;
+			productName = ExpandableTableViewDataHelper;
+			productReference = 0D657DE01D3882BB004AB60C /* libExpandableTableViewDataHelper.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0D657DD81D3882BB004AB60C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Mia;
+				TargetAttributes = {
+					0D657DDF1D3882BB004AB60C = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 0D657DDB1D3882BB004AB60C /* Build configuration list for PBXProject "ExpandableTableViewDataHelper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0D657DD71D3882BB004AB60C;
+			productRefGroup = 0D657DE11D3882BB004AB60C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0D657DDF1D3882BB004AB60C /* ExpandableTableViewDataHelper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2BC75F69B086BCF55579438C /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F254BB6CFD12451089450A47 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ExpandableTableViewDataHelper/Pods-ExpandableTableViewDataHelper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D657DDC1D3882BB004AB60C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D657DE61D3882BB004AB60C /* ExpandableTableViewDataHelper.m in Sources */,
+				0D657DEE1D3883CF004AB60C /* ExpandableCellModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0D657DE71D3882BB004AB60C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0D657DE81D3882BB004AB60C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0D657DEA1D3882BB004AB60C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53B0DBD5D8F016D5CA7C0F3A /* Pods-ExpandableTableViewDataHelper.debug.xcconfig */;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		0D657DEB1D3882BB004AB60C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B39801080D95E78007F62FE1 /* Pods-ExpandableTableViewDataHelper.release.xcconfig */;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0D657DDB1D3882BB004AB60C /* Build configuration list for PBXProject "ExpandableTableViewDataHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D657DE71D3882BB004AB60C /* Debug */,
+				0D657DE81D3882BB004AB60C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D657DE91D3882BB004AB60C /* Build configuration list for PBXNativeTarget "ExpandableTableViewDataHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D657DEA1D3882BB004AB60C /* Debug */,
+				0D657DEB1D3882BB004AB60C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0D657DD81D3882BB004AB60C /* Project object */;
+}

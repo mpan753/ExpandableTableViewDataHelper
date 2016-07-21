@@ -1,0 +1,6 @@
+framework module Pods_ExpandableTableViewDataHelper {
+  umbrella header "Pods-ExpandableTableViewDataHelper-umbrella.h"
+
+  export *
+  module * { export * }
+}
