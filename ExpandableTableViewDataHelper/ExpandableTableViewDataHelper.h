@@ -38,7 +38,7 @@ typedef NS_ENUM(NSInteger, MPInsertionPositionOption) {
 - (void)reloadData; // re-generate the data structure of the provided dara array list, which in return will reset all expanded cell but the level-1 cell as folded status
 - (void)reloadDataInSection:(NSInteger)section; // same as reloadDate, but only will affect data array in a section
 
-- (NSInteger)numberOfRowsInSection:(NSInteger)section; // return the number, including all hidden data
+- (NSInteger)numberOfRowsInsection:(NSInteger)section; // return the number, including all hidden data
 - (id _Nullable)objectAtIndexPath:(NSIndexPath * _Nonnull)indexPath; // can be used in cellForRow, to obtain the dataSource
 - (void)didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath; // the selector to do the expansion
 
