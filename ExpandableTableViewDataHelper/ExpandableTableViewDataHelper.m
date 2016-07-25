@@ -24,6 +24,9 @@
 
 - (instancetype)initWithTableView:(UITableView *)tableView {
     if (self = [super init]) {
+        if (!tableView) {
+            return nil;
+        }
         privateTableView = tableView;
         self.numberOfSections = 1;
     }
@@ -32,18 +35,22 @@
 
 - (instancetype)init {
     if (self = [self initWithTableView:nil]) {
+        NSLog(@"Error: Please use selector initWithTableView: to initializa this class");
     }
     return self;
 }
 
 - (void)setDelegate:(id<ExpandableDataHelperDelegate>)delegate {
+    if (!delegate) {
+        return;
+    }
     _delegate = delegate;
     if (self.tableView) {
         self.numberOfSections = [self.tableView numberOfSections];
     }
     
     self.isRowAnimationSet = NO;
-    if ([_delegate respondsToSelector:@selector(tableViewRownAnimationInSection:)]) {
+    if ([_delegate respondsToSelector:@selector(tableViewRowAnimationInSection:)]) {
         self.isRowAnimationSet = YES;
     }
     
@@ -66,7 +73,6 @@
 }
 
 - (void)resetSection:(NSInteger)section {
-    
     self.sections[section] = [@[] mutableCopy];
 }
 
@@ -209,7 +215,7 @@
 - (void)didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     ExpandableCellModel *model = [self expandableObjectAtIndexPath:indexPath];
     model.isSelected = !model.isSelected;
-    UITableViewRowAnimation rowAnimation = self.isRowAnimationSet ? [self.delegate tableViewRownAnimationInSection:indexPath.section] : UITableViewRowAnimationAutomatic;
+    UITableViewRowAnimation rowAnimation = self.isRowAnimationSet ? [self.delegate tableViewRowAnimationInSection:indexPath.section] : UITableViewRowAnimationAutomatic;
     
     [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:indexPath.section] withRowAnimation:rowAnimation];
 }
@@ -232,43 +238,5 @@
     return [[self expandableObjectAtIndexPath:indexPath] level];
 }
 
-- (void)insertSameLevelObject:(id)object aboveObjectAtIndexPath:(NSIndexPath *)indexPath animationOption:(UITableViewRowAnimation)animationOption {
-    
-}
-
-- (void)insertSameLevelObject:(id)object belowObjectAtIndexPath:(NSIndexPath *)indexPath animationOption:(UITableViewRowAnimation)animationOption {
-    
-}
-
-- (void)addSubLevelObject:(id)object toObjectAtIndexPath:(NSIndexPath *)indexPath insertionPositionOption:(MPInsertionPositionOption)option animationOption:(UITableViewRowAnimation)animationOption {
-    ExpandableCellModel *model = [self expandableObjectAtIndexPath:indexPath];
-    NSInteger level = model.level;
-    if (level + 1 > [self.delegate numberOfLevels]) {
-        NSLog(@"The Maximum number of level has been reached!");
-        return;
-    }
-    ExpandableCellModel *addedModel = [[ExpandableCellModel alloc] initWithContent:object level:level + 1];
-    [self configureExpandableSettingForModel:addedModel];
-    addedModel.superLevelNode = model;
-    NSMutableArray *dataArray = self.sections[indexPath.section];
-    NSInteger index = [dataArray indexOfObject:model];
-    if (option == MPInsertionPositionOptionTop) {
-        [dataArray insertObject:addedModel atIndex:index+1];
-    } else {
-        [dataArray insertObject:addedModel atIndex:index+model.subLevelNodes.count];
-    }
-    
-    // make all its subNode to be visible
-    model.isSelected = YES;
-    
-    // make ths isVisible the same as its superNode's expanded status
-    //    addedModel.isVisible = model.isSelected;
-    
-    [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:indexPath.section] withRowAnimation:animationOption];
-}
-
-- (void)addTopLevelObjects:(NSArray *)objects toEndOfSection:(NSInteger)section {
-    
-}
 
 @end
